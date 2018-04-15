@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
+from django.views.generic import TemplateView
 from rest_framework import routers
 from api import views
 
@@ -26,7 +27,8 @@ router.register(r'experts', views.ExpertViewSet)
 
 
 urlpatterns = [
-    path(r'', include(router.urls)),
+	path(r'', TemplateView.as_view(template_name="index.html")),
+    path(r'api/', include(router.urls)),
     path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
 ]
