@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/shashisp/findanexpert.svg?token=ppP1R4pozmzaxUNGXuSg&branch=master)](https://travis-ci.com/shashisp/findanexpert)
+https://travis-ci.com/shashisp/findanexpert.svg?token=ppP1R4pozmzaxUNGXuSg&branch=master
