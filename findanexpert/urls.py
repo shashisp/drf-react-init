@@ -19,11 +19,13 @@ from django.urls import path
 from django.views.generic import TemplateView
 from rest_framework import routers
 from api import views
+from notes.api import NoteViewSet
 
 
 
 router = routers.DefaultRouter()
 router.register(r'experts', views.ExpertViewSet)
+router.register(r'notes', NoteViewSet)
 
 
 urlpatterns = [
